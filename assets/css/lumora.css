@@ -9137,3 +9137,138 @@ footer{border-top:3px solid var(--primitive-color--primary-500,#2f80ff);}
 
 /* team-header-readability */
 .section_team .home-team_header-title,.section_team .home-team_header-para{text-shadow:0 2px 14px rgba(0,0,0,.45);}
+
+
+/* === DENTISTREE DENTAL: SMOOTH SERVICES SLIDER === */
+
+/* Kill all sticky/scroll-jacking traps completely */
+.section_service {
+  position: relative !important;
+  overflow: hidden !important;
+}
+.service_sticky-trigger {
+  height: auto !important;
+  position: static !important;
+}
+.service_sticky-camera {
+  height: auto !important;
+  position: static !important;
+  top: auto !important;
+  flex-flow: column !important;
+}
+.scroll-mobile_trigger {
+  height: auto !important;
+  padding-bottom: 0 !important;
+}
+.scroll-mobile_camera {
+  position: static !important;
+  top: auto !important;
+  transform: none !important;
+  opacity: 1 !important;
+}
+
+/* Services Slider - inspired by story_slider with smooth transition */
+.services_slider {
+  width: 100% !important;
+  background-color: transparent !important;
+  height: auto !important;
+  position: relative !important;
+  overflow: visible !important;
+  cursor: grab;
+}
+.services_slider:active {
+  cursor: grabbing;
+}
+.story_slider {
+  cursor: grab;
+}
+.story_slider:active {
+  cursor: grabbing;
+}
+.services-slider_mask {
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 24px !important;
+  overflow: hidden !important;
+}
+.services-slider_slide {
+  width: 100% !important;
+  height: auto !important;
+  display: inline-block !important;
+  vertical-align: top !important;
+  white-space: normal !important;
+}
+.services_slider .service_item {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 480px !important;
+  border-radius: 24px !important;
+  box-sizing: border-box !important;
+  border: 1px solid rgba(0,0,0,0.06) !important;
+}
+.services-slider_arrow-wrap {
+  border: 1px solid var(--color-shadow--dark-80, rgba(0,0,0,0.15)) !important;
+  border-radius: 50% !important;
+  background-color: #ffffff !important;
+  width: 52px !important;
+  height: 52px !important;
+  color: var(--primitive-color--primary-500, #2f80ff) !important;
+  justify-content: center !important;
+  align-items: center !important;
+  display: flex !important;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1) !important;
+  transition: all 0.25s ease !important;
+  cursor: pointer !important;
+  z-index: 10 !important;
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+}
+.services-slider_arrow-wrap:hover {
+  background-color: var(--primitive-color--primary-500, #2f80ff) !important;
+  color: #ffffff !important;
+  transform: translateY(-50%) scale(1.08) !important;
+}
+.services-slider_arrow-wrap.w-slider-arrow-left {
+  left: -26px !important;
+  right: auto !important;
+}
+.services-slider_arrow-wrap.w-slider-arrow-right {
+  right: -26px !important;
+  left: auto !important;
+}
+@media screen and (max-width: 991px) {
+  .services-slider_arrow-wrap.w-slider-arrow-left {
+    left: 8px !important;
+  }
+  .services-slider_arrow-wrap.w-slider-arrow-right {
+    right: 8px !important;
+  }
+}
+.services-slider_arrow {
+  width: 20px !important;
+  height: 14px !important;
+}
+.services_slider .slide-nav {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 8px !important;
+  margin-top: 24px !important;
+  position: static !important;
+  height: auto !important;
+}
+.services_slider .w-slider-dot {
+  background-color: rgba(47,128,255,0.25) !important;
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+  margin: 0 !important;
+  transition: all 0.3s ease !important;
+  display: inline-block !important;
+}
+.services_slider .w-slider-dot.w-active {
+  background-color: var(--primitive-color--primary-500, #2f80ff) !important;
+  width: 32px !important;
+  border-radius: 6px !important;
+}
